@@ -40,6 +40,7 @@ def over?(board)
 end
     
 def winner(board)
+<<<<<<< HEAD
   winning_board = won?(board)
   if winning_board != false
     position = winning_board[0]
@@ -48,6 +49,27 @@ def winner(board)
   else
     return "O"
 end
+=======
+  if winning_board != false
+  winning_board = won?
+  if board[0, 1, 2] == "X, X, X" 
+    puts "X"
+elsif [3, 4, 5] == "X, X, X" 
+    puts "X"
+elsif [6, 7, 8] == "X, X, X" 
+    puts "X"
+elsif [1, 4, 7] == "X, X, X"
+    puts "X"
+elsif [2, 5, 8] == "X, X, X" 
+    puts "X"
+elsif [0, 3, 6] == "X, X, X" 
+    puts "X"
+elsif [0, 4, 8] == "X, X, X" 
+    puts "X"
+elsif [2, 4, 6] == "X, X, X" 
+    puts "X"
+else 
+    puts "O"
 end
 end
     
